@@ -17,7 +17,7 @@ services:
      context:  ./nginx
      dockerfile: Dockerfile
     volumes:
-            - ssl_certificates:/etc/ssl/
+            - ssl_certificates:/nginx/files/
 
     ports:
      - 80:80
